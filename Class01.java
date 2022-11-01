@@ -1,3 +1,4 @@
+package Java11;
 abstract class CShape {
 	protected String color;
 
