@@ -1,3 +1,4 @@
+package Java11;
 interface Math {
 	public void show();
 
