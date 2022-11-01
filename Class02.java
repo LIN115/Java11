@@ -1,3 +1,4 @@
+package Java11;
 abstract class Math {
 	protected int ans;
 
