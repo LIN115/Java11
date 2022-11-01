@@ -1,3 +1,4 @@
+package Java11;
 interface Data {
 	public void best();
 
@@ -28,28 +29,28 @@ class CStu implements Test {
 	}
 
 	public void showData() {
-		System.out.println("©m¦W:" + name);
-		System.out.println("¼Æ¾Ç¦¨ÁZ:" + math);
-		System.out.println("­^¤å¦¨ÁZ:" + english);
-		System.out.println("¥­§¡¦¨ÁZ:" + average());
+		System.out.println("å§“å:" + name);
+		System.out.println("æ•¸å­¸æˆç¸¾:" + math);
+		System.out.println("è‹±æ–‡æˆç¸¾:" + english);
+		System.out.println("å¹³å‡æˆç¸¾:" + average());
 	}
 
 	public void best() {
 		if (math > english)
-			System.out.println(name + "ªº¼Æ¾Ç¤ñ­^¤å¦n");
+			System.out.println(name + "çš„æ•¸å­¸æ¯”è‹±æ–‡å¥½");
 		else if (math < english)
-			System.out.println(name + "ªº­^¤å¤ñ¼Æ¾Ç¦n");
+			System.out.println(name + "çš„è‹±æ–‡æ¯”æ•¸å­¸å¥½");
 		else
-			System.out.println(name + "ªº¼Æ¾Ç©M­^¤å¤@¼Ë¦n");
+			System.out.println(name + "çš„æ•¸å­¸å’Œè‹±æ–‡ä¸€æ¨£å¥½");
 	}
 
 	public void failed() {
 		if (math < 60)
-			System.out.println(name + "ªº¼Æ¾Ç·í±¼¤F");
+			System.out.println(name + "çš„æ•¸å­¸ç•¶æ‰äº†");
 		if (english < 60)
-			System.out.println(name + "ªº­^¤å·í±¼¤F");
+			System.out.println(name + "çš„è‹±æ–‡ç•¶æ‰äº†");
 		if (math > 60 && english > 60)
-			System.out.println(name + "ªº¼Æ¾Ç©M­^¤å³£¤Î®æ");
+			System.out.println(name + "çš„æ•¸å­¸å’Œè‹±æ–‡éƒ½åŠæ ¼");
 	}
 
 	public double average() {
