@@ -1,30 +1,31 @@
 package Java11;
-abstract class CShape {
+
+abstract class CShpape {
 	protected String color;
 
-	public CShape(String str) {
+	public CShpape(String str) {
 		color = str;
 	}
 
 	public abstract void show();
 }
 
-class CRectangle extends CShape {
+class CRctangle8 extends CShpape {
 	int width, height;
 
-	public CRectangle(int w, int h) {
+	public CRctangle8(int w, int h) {
 		super("Yellow");
 		width = w;
 		height = h;
 	}
 
 	public void show() {
-		System.out.print("color=" + color + ",");
+		System.out.print("color=" + color + ", ");
 		System.out.println("area=" + width * height);
 	}
 }
 
-class CCircle extends CShape {
+class CCircle extends CShpape {
 	double radius;
 
 	public CCircle(double r) {
@@ -33,7 +34,7 @@ class CCircle extends CShape {
 	}
 
 	public void show() {
-		System.out.print("color=" + color + ",");
+		System.out.print("color=" + color + ", ");
 		System.out.println("area=" + 3.14 * radius * radius);
 	}
 }
@@ -41,12 +42,9 @@ class CCircle extends CShape {
 public class Class01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		CRectangle rect = new CRectangle(5, 10);
+		CRctangle8 rect = new CRctangle8(5, 10);
 		rect.show();
-
 		CCircle cir = new CCircle(2.0);
 		cir.show();
 	}
-
 }
